@@ -1,0 +1,198 @@
+body {
+  background: #fff;
+  font-family: $ff-primary;
+  font-size: 0.8em;
+  color: $c-primary;
+}
+
+.hero {
+  @include media-breakpoint-up(md) {
+    margin: 2em 0;
+    padding-left: 2em;
+    padding-right: 2em;
+  };
+}
+
+.hero-img {
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
+
+.info {
+  .photodiary {
+    justify-content: center;
+
+    @include media-breakpoint-up(md) {
+      justify-content: left;
+    };
+  }
+
+
+}
+
+.hero-text {
+  margin-bottom: 1em;
+  justify-content: center;
+}
+
+.gallery {
+  @include media-breakpoint-up(lg) {
+    display: none;
+  };
+}
+
+.gallery img {
+  margin-bottom: 2em;
+  width: 100%;
+}
+
+.also, footer, .newsletter {
+  background: #f5f5f5;
+}
+
+.also {
+  @include media-breakpoint-up(lg) {
+    display: none;
+  };
+}
+
+.extra {
+  margin: 2em 0;
+  padding-top: 4em;
+  padding-bottom: 3em;
+
+  .category {
+    margin-bottom: 2em;
+  }
+
+  img {
+    margin-bottom: 1em;
+  }
+}
+
+.comments {
+
+  .category {
+    margin-top: 2em;
+    margin-bottom: 2em;
+  }
+
+  .form-group {
+    margin-top: 1em;
+  }
+
+  @include media-breakpoint-up(lg) {
+    display: none;
+  };
+
+}
+
+.comments img {
+  height: 100%;
+}
+
+.comments .row {
+  @include media-breakpoint-up(md) {
+    margin-bottom: 3em;
+  };
+}
+
+.footer {
+  padding: 2em 1em 1em;
+
+}
+
+footer {
+  .terms, .social {
+    justify-content: center;
+  }
+
+  @include media-breakpoint-up(md) {
+    .terms {
+      justify-content: flex-start;
+    }
+    .social {
+      justify-content: flex-end;
+    }
+  };
+}
+
+.about-me {
+
+  margin-top: 3em;
+
+  img {
+    margin-bottom: 1em;
+  }
+
+  @include media-breakpoint-up(lg) {
+    display: none;
+  };
+
+  @include media-breakpoint-down(sm) {
+    display: none;
+  };
+}
+
+.posts {
+
+  .top {
+    margin-bottom: 2em;
+  }
+
+  h6 {
+    margin-bottom: -1em;
+  }
+
+  @include media-breakpoint-up(lg) {
+    display: none;
+  };
+
+  @include media-breakpoint-down(sm) {
+    display: none;
+  };
+}
+
+.grid {
+
+  margin-top: 2em;
+  padding: 2em;
+
+  img {
+    width: 100%;
+  }
+
+  p {
+    margin-top: 1.5em;
+    margin-bottom: 4em;
+  }
+
+  a {
+    font-family: $ff-primary;
+    font-size: 2em;
+    color: $c-primary;
+    border: 2px solid $c-primary;
+    padding: 0.5em 2em;
+    margin-top: 2em;
+    margin-bottom: 1em;
+  }
+
+  @include media-breakpoint-down(md) {
+    display: none;
+  };
+}
+
+.newsletter {
+
+  padding-top: 1em;
+  padding-bottom: 1em;
+  margin-bottom: 6em;
+
+  input {
+    margin-top: 1em;
+    text-align: center;
+  }
+  @include media-breakpoint-down(md) {
+    display: none;
+  };
+}

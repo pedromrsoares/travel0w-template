@@ -1,0 +1,23 @@
+.category {
+  font-family: $ff-secondary;
+  text-transform: uppercase;
+  width: 100%;
+  @include media-breakpoint-up(md) {
+    margin-top: 2em;
+  };
+
+}
+
+.info a {
+  color: $c-primary;
+}
+
+.gallery ul li a, .comments ul li a, footer a {
+  font-family: FontAwesome;
+  color: $c-primary;
+}
+
+.gallery .share a, .comments ul li, footer li {
+  text-transform: uppercase;
+  font-family: $ff-secondary;
+}

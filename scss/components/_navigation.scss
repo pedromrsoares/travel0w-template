@@ -1,0 +1,19 @@
+nav .navbar{
+  background: #fff;
+
+}
+
+.navbar-brand {
+  font-family: $ff-logo;
+  text-transform: uppercase;
+}
+
+.navbar-nav a {
+  font-family: $ff-primary;
+  text-transform: uppercase;
+  
+
+  @include media-breakpoint-up(md) {
+    margin-left: 40px;
+  };
+}
